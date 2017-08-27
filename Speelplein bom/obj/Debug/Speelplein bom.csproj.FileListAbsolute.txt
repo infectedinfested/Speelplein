@@ -1,0 +1,28 @@
+C:\Users\kevin\AppData\Local\Temporary Projects\Speelplein bom\bin\Debug\Speelplein bom.exe.config
+C:\Users\kevin\AppData\Local\Temporary Projects\Speelplein bom\bin\Debug\Speelplein bom.exe
+C:\Users\kevin\AppData\Local\Temporary Projects\Speelplein bom\bin\Debug\Speelplein bom.pdb
+C:\Users\kevin\AppData\Local\Temporary Projects\Speelplein bom\obj\Debug\Speelplein bom.csprojResolveAssemblyReference.cache
+C:\Users\kevin\AppData\Local\Temporary Projects\Speelplein bom\obj\Debug\MainWindow.g.cs
+C:\Users\kevin\AppData\Local\Temporary Projects\Speelplein bom\obj\Debug\App.g.cs
+C:\Users\kevin\AppData\Local\Temporary Projects\Speelplein bom\obj\Debug\Speelplein bom_MarkupCompile.cache
+C:\Users\kevin\AppData\Local\Temporary Projects\Speelplein bom\obj\Debug\Speelplein bom_MarkupCompile.lref
+C:\Users\kevin\AppData\Local\Temporary Projects\Speelplein bom\obj\Debug\MainWindow.baml
+C:\Users\kevin\AppData\Local\Temporary Projects\Speelplein bom\obj\Debug\Speelplein bom.g.resources
+C:\Users\kevin\AppData\Local\Temporary Projects\Speelplein bom\obj\Debug\Speelplein_bom.Properties.Resources.resources
+C:\Users\kevin\AppData\Local\Temporary Projects\Speelplein bom\obj\Debug\Speelplein bom.csproj.GenerateResource.Cache
+C:\Users\kevin\AppData\Local\Temporary Projects\Speelplein bom\obj\Debug\Speelplein bom.exe
+C:\Users\kevin\AppData\Local\Temporary Projects\Speelplein bom\obj\Debug\Speelplein bom.pdb
+D:\Drive\VisualStudioWorkspace\Speelplein bom\bin\Debug\Speelplein bom.exe.config
+D:\Drive\VisualStudioWorkspace\Speelplein bom\obj\Debug\Speelplein bom.exe
+D:\Drive\VisualStudioWorkspace\Speelplein bom\obj\Debug\Speelplein bom.pdb
+D:\Drive\VisualStudioWorkspace\Speelplein bom\bin\Debug\Speelplein bom.exe
+D:\Drive\VisualStudioWorkspace\Speelplein bom\bin\Debug\Speelplein bom.pdb
+D:\Drive\VisualStudioWorkspace\Speelplein bom\obj\Debug\Speelplein bom.csprojResolveAssemblyReference.cache
+D:\Drive\VisualStudioWorkspace\Speelplein bom\obj\Debug\MainWindow.g.cs
+D:\Drive\VisualStudioWorkspace\Speelplein bom\obj\Debug\App.g.cs
+D:\Drive\VisualStudioWorkspace\Speelplein bom\obj\Debug\Speelplein bom_MarkupCompile.cache
+D:\Drive\VisualStudioWorkspace\Speelplein bom\obj\Debug\Speelplein bom_MarkupCompile.lref
+D:\Drive\VisualStudioWorkspace\Speelplein bom\obj\Debug\MainWindow.baml
+D:\Drive\VisualStudioWorkspace\Speelplein bom\obj\Debug\Speelplein bom.g.resources
+D:\Drive\VisualStudioWorkspace\Speelplein bom\obj\Debug\Speelplein_bom.Properties.Resources.resources
+D:\Drive\VisualStudioWorkspace\Speelplein bom\obj\Debug\Speelplein bom.csproj.GenerateResource.Cache

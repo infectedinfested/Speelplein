@@ -1,0 +1,86 @@
+﻿<Window x:Class="Speelplein_bom.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Speelplein_bom"
+        mc:Ignorable="d"
+        Title="MainWindow" WindowState="Maximized"
+        Closing="MainWindow_Closing" SizeChanged="MainWindow_Resize" ResizeMode="CanResizeWithGrip" >
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="254*"/>
+            <ColumnDefinition Width="263*"/>
+        </Grid.ColumnDefinitions>
+        <Image x:Name="ImgBomb" Source="C:\resource\Time-Bomb.png" Margin="24,244,19,0" Height="133" VerticalAlignment="Top"/>
+        <Image x:Name="ImgLock1" Source="C:\resource\lock.png" Margin="10,28,293,0" Height="70" VerticalAlignment="Top" Grid.Column="1"/>
+        <Image x:Name="ImgLock4" Source="C:\resource\lock.png" Margin="218,28,85,0" Height="70" VerticalAlignment="Top" Grid.Column="1"/>
+        <Image x:Name="ImgLock2" Source="C:\resource\lock.png" Margin="79,28,233,0" Height="70" VerticalAlignment="Top" Grid.Column="1"/>
+        <Image x:Name="ImgLock3" Source="C:\resource\lock.png" Margin="144,28,159,0" Height="70" VerticalAlignment="Top" Grid.Column="1"/>
+        <Image x:Name="ImgLock5" Source="C:\resource\lock.png" Margin="293,28,10,0" Height="70" VerticalAlignment="Top" Grid.Column="1"/>
+
+        <Viewbox Margin="161,276,145,0" Height="23" VerticalAlignment="Top">
+            <TextBlock x:Name="TxtBomb"  Text="88:88:88" />
+            
+        </Viewbox>
+        <Label x:Name="TxtDisarmed" Content="Bom onschadelijk gemaakt" Foreground="Lime" Margin="49,269,0,0" VerticalAlignment="Top" Height="74" FontSize="24" FontWeight="Bold" RenderTransformOrigin="0.5,0.5" Visibility="Hidden" >
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="-0.561"/>
+                    <RotateTransform Angle="21.296"/>
+                    <TranslateTransform X="0.464" Y="-1.19"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Button x:Name="BtnStart" Content="Start" Margin="143,205,155,0" VerticalAlignment="Top" Click="BtnStart_Click" />
+        <Canvas x:Name="Question1" Grid.Column="1" Margin="0,140,0,0"  >
+            <Button x:Name="BtnYellow" Click="ResetLock" Height="100" Canvas.Left="32" Canvas.Top="41" Width="56" >
+                <Image Source="C:\Resource\Yellow.png" />
+            </Button>
+            <Button x:Name="BtnGreen" Click="ResetLock"  Height="100" VerticalAlignment="Top" Canvas.Left="113" Canvas.Top="41" Width="65">
+                <Image Source="C:\Resource\Green.png" />
+            </Button>
+            <Button x:Name="BtnRed" Click="BtnTest_Click1"  Height="100" VerticalAlignment="Top" Canvas.Left="205" Canvas.Top="41" Width="65">
+                <Image Source="C:\Resource\Red.png" />
+            </Button>
+            <Button x:Name="Btnblue" Click="ResetLock"  Height="100" VerticalAlignment="Top" Canvas.Left="296" Canvas.Top="41" Width="65">
+                <Image Source="C:\Resource\Blue.png" />
+            </Button>
+        </Canvas>
+        <Canvas x:Name="Question2" Grid.Column="1" Margin="0,140,0,0" Visibility="Hidden">
+            <TextBox x:Name="TxtCode" Height="23" Canvas.Left="134" TextWrapping="Wrap" Canvas.Top="108" Width="120" MaxLength="4"/>
+            <Label x:Name="label" Content="Pincode:" Canvas.Left="56" Canvas.Top="105"/>
+            <Button x:Name="BtnUnlock" Content="Unlock" Canvas.Left="278" Canvas.Top="111" Width="75" Click="BtnUnlock_Click"/>
+        </Canvas>
+        <Canvas x:Name="Question3" Grid.Column="1" Margin="10,164,0,0" Visibility="Hidden" >
+            <Button x:Name="BtnQuestion3" Content="Submit" Canvas.Left="156" Canvas.Top="245" Click="BtnQuestion3_Click"/>
+            <Label x:Name="lblQ1vr1" Content="weet jij wat er vandaag is gebeur...     ? " Canvas.Left="32" Canvas.Top="94" Width="260"/>
+            <TextBox x:Name="TxtQ3Vr1" Height="23" Canvas.Left="211" TextWrapping="Wrap" Canvas.Top="97" Width="21" MaxLength="2"/>
+            <Label x:Name="lblQ1vr2" Content="vin        jij dat de drank te duur is in het casino? " Canvas.Left="32" Canvas.Top="122" Width="260"/>
+            <TextBox x:Name="TxtQ3Vr2" Height="23" Canvas.Left="53" TextWrapping="Wrap" Canvas.Top="125" Width="21" MaxLength="2"/>
+            <Label x:Name="lblQ1vr3" Content="het wer       hoog tijd om een gokje te wagen. " Canvas.Left="32" Canvas.Top="153" Width="260"/>
+            <TextBox x:Name="TxtQ3Vr3" Height="23" Canvas.Left="78" TextWrapping="Wrap" Canvas.Top="156" Width="21" MaxLength="2"/>
+            <Label x:Name="lblQ1vr4" Content="ik heb geen idee wat jij vin       ." Canvas.Left="32" Canvas.Top="184" Width="260"/>
+            <TextBox x:Name="TxtQ3Vr4" Height="23" Canvas.Left="178" TextWrapping="Wrap" Canvas.Top="187" Width="21" MaxLength="2"/>
+            <Label x:Name="label1" Content="Vul in; (d/dt/t)" Canvas.Left="78" Canvas.Top="35" FontSize="16" FontWeight="Bold"/>
+        </Canvas>
+        <Canvas x:Name="Question4" Grid.Column="1" Margin="0,140,0,0" Visibility="Hidden">
+
+            <Button x:Name="BtnQuestion4" Content="submit" Canvas.Left="226" Canvas.Top="161" Click="BtnQuestion4_Click"/>
+            <TextBox x:Name="TxtQ4" Height="23" Canvas.Left="80" TextWrapping="Wrap" Canvas.Top="161" Width="120"/>
+            <Image x:Name="Formule" Source="C:\Resource\formule.png" Height="107" Canvas.Left="47" Canvas.Top="30" Width="281"/>
+        </Canvas>
+
+        <Canvas x:Name="Question5" Grid.Column="1" Margin="0,140,0,0" Visibility="Hidden">
+            <Button x:Name="BtnQuestion5" Content="Submit" Canvas.Left="161" Canvas.Top="164" Click="BtnQuestion5_Click" />
+            <TextBox x:Name="TxtQ5" Height="60" Canvas.Left="36" TextWrapping="Wrap" Canvas.Top="80" Width="317"/>
+            <Label x:Name="label2" Content="Geef de geheime code, beginnend met 1734:" Canvas.Left="69" Height="40" Canvas.Top="10"/>
+            <Label x:Name="label3" Content="gescheide met een comma en met hoofdletters: bv '1,B,7,3'" Canvas.Left="69" Canvas.Top="40" FontSize="9"/>
+        </Canvas>
+        <TextBlock x:Name="LockMessage" Margin="24,437,19,0" TextWrapping="Wrap" Text="Systeem  gelocked voor 30 seconden" VerticalAlignment="Top" Height="57" FontSize="20" Visibility="Hidden"/>
+        
+        <!--1-7-3-4-6-7-3-2-1-4-7-6-Charlie-3-2-7-8-9-7-7-7-6-4-3-Tango-7-3-2-Victor-7-3-1-1-7-8-8-8-7-3-2-4-7-6-7-8-9-7-6-4-3-7-6 -->
+
+    </Grid>
+</Window>
